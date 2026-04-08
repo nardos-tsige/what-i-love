@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23D2691E' stroke='%23000' stroke-width='2'/%3E%3Cpath d='M50 5 L50 95 M5 50 L95 50' stroke='%23000' stroke-width='2'/%3E%3Cpath d='M20 20 Q50 50 80 20 M20 80 Q50 50 80 80' fill='none' stroke='%23000' stroke-width='2'/%3E%3C/svg%3E">
+    <title>Thunder Hoops | Join Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-basketball-ball"></i> Thunder Hoops
+            </div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html" class="active">Join Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Become Part of Thunder Hoops</h2>
+            <p class="intro-text">Fill out the form below and take the first step toward joining Ethiopia’s most passionate basketball family.</p>
+
+            <form>
+                <label for="fullname">Full Name <span class="required">*</span></label>
+                <input type="text" id="fullname" required>
+
+                <label for="age">Age <span class="required">*</span></label>
+                <input type="number" id="age" min="8" max="35" required>
+
+                <label>Gender</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+
+                <label for="position">Preferred Position</label>
+                <select id="position">
+                    <option>Point Guard</option>
+                    <option>Shooting Guard</option>
+                    <option>Small Forward</option>
+                    <option>Power Forward</option>
+                    <option>Center</option>
+                    <option>Any</option>
+                </select>
+
+                <label for="experience">Years of Experience (0-20)</label>
+                <input type="range" id="experience" min="0" max="20" value="3">
+
+                <label for="preferences">Preferences (Check all that apply)</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="youth" name="preferences">
+                    <label for="youth">Youth Team</label>
+                    <input type="checkbox" id="senior" name="preferences">
+                    <label for="senior">Senior Team</label>
+                    <input type="checkbox" id="training" name="preferences">
+                    <label for="training">Weekend Training Only</label>
+                </div>
+
+                <label for="message">Why do you love basketball? Tell us your story</label>
+                <textarea id="message" rows="6" placeholder="I love basketball because..."></textarea>
+
+                <button type="submit" class="btn primary">Submit My Application</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-basketball-ball"></i> Thunder Hoops
+                </div>
+                <div class="social-links">
+                    <a href="https://t.me/thunderhoops" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    <a href="https://instagram.com/thunderhoops_et" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com/thunderhoops" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 Thunder Hoops Basketball Club, Addis Ababa University. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
